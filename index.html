@@ -1,0 +1,75 @@
+<!--
+Program Name: gw_portfolio_2020
+Description: A single page app - personal portfolio
+
+Revision History:
+    Graham White - September 16 2020: Created
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A personal portfolio 2020" />
+    <meta name="keywords" content="twitter bootstrap single page portfolio" />
+    <meta name="author" content="Graham White" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!--Bootstrap 4.0.0 CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>GW Portfolio - Home</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Graham White's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" id="home_link" href="#home_link">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="projects_link" href="#project_link">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="about_link" href="#about_link">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact_link" href="#contact_link">Contact</a>
+            </li>
+        </ul>
+        <span class="navbar-text">Site created by Graham White</span>
+    </div>
+</nav>
+<div class="container ">
+    <div class="container-fluid">
+        <br/>
+        <div class="section" >
+            <home id="home_page" ></home>
+        </div>
+
+        <div class="section" >
+            <about></about>
+        </div>
+
+        <div class="section" >
+            <contact></contact>
+        </div>
+
+    </div>
+
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="js/index.js" type="module"></script>
+</body>
+</html>
